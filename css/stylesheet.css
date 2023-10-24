@@ -1,0 +1,15 @@
+nav{
+    background-color: aqua;
+
+
+}
+nav li{
+    display: inline-block;
+
+
+}
+nav a{
+    color: black;
+    font-family: Arial;
+
+}
