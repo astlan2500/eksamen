@@ -1,17 +1,24 @@
-nav{
-    background-color: aqua;
-
-
+.navbar ul{
+    background-color: rgb(67, 67, 67);
+    padding: 0px;
+    margin: 0px;
 }
-nav li{
+.navbar li{
     display: inline-block;
 
 
 }
-nav a{
-    color: black;
+.navbar a{
+    color: white;
     font-family: Arial;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
 
+}
+.navbar a:hover{
+    background-color: rgb(40, 40, 40);
 }
 img{
     width: 500px;
