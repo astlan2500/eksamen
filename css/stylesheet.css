@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .navbar, .navbar2{
     position: sticky;
     top: 0;
@@ -36,6 +40,7 @@ text-decoration: none;
 }
 .navbar a:hover, .navbar2 a:hover{
     background-color: rgb(171, 171, 171);
+    cursor: pointer;
 }
 img{
     width: 70%;
@@ -56,6 +61,19 @@ img{
     padding: 10px;
 
 }
+<<<<<<< HEAD
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align:left;
+    padding: 20px 0;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+=======
 
 h1, h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -71,3 +89,4 @@ h1, h2{
     background-color:rgb(36, 36, 36);
 }
 
+>>>>>>> e1b392839e82ceaec2c9cf21db429410f7ccdffe
