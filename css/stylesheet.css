@@ -42,9 +42,6 @@ text-decoration: none;
     background-color: rgb(171, 171, 171);
     cursor: pointer;
 }
-img{
-    width: 70%;
-}
 .aktiv {
     background-color: rgb(20, 20, 20);
     color: white;
@@ -70,4 +67,8 @@ h1{
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.matbilde{
+    flex: 40%;
 }
