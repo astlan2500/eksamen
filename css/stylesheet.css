@@ -69,7 +69,13 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.Matbilde{
-   size: 10px;
-    flex: 40px;
+.matbilde{
+   height: auto;
+   width: 10vw;
+}
+@media (max-width: 480px) {
+    .matbilde {
+        height: auto;
+        width: 20vw;
+    }
 }
