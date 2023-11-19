@@ -78,4 +78,7 @@ h2{
         height: auto;
         width: 20vw;
     }
+    .navbar a {
+        padding: 25px;
+    }
 }
