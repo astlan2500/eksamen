@@ -2,21 +2,17 @@ body{
     margin: 0;
     padding: 0;
 }
-.navbar, .navbar2{
+.navbar{
     position: sticky;
     top: 0;
 }
 .navbar ul{
-    background-color: rgb(67, 67, 67);
+    background-color:pink;
     padding: 0px;
     margin: 0px;
 }
-.navbar2 ul {
-    background-color: pink;
-    padding: 0px;
-    margin: 0px;
-}
-.navbar li, .navbar2 li{
+
+.navbar li{
     display: inline-block;
 }
 
@@ -29,30 +25,20 @@ body{
     text-align: center;
 
 }
-.navbar2 a{
-    color:black;
-    font-family: arial;
-    text-decoration: none;
-    padding: 20px;
-    display: block;
-    text-align: center;
 
-}
-.navbar a:hover, .navbar2 a:hover{
+.navbar a:hover{
     background-color: rgb(171, 171, 171);
     cursor: pointer;
 }
 .aktiv {
-    background-color: rgb(20, 20, 20);
+    background-color:hotpink;
     color: white;
 }
-.aktiv2 {
-    background-color:white;
-}
+
 footer{
     padding: 10px;
     text-align: center;
-    background-color: rgb(198, 198, 198);
+    background-color: rgb(249, 249, 118);
 }
 .bunntekst li {
     display: inline-block;
