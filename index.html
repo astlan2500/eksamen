@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <head>
+    <!-- link til css for å redeigere utseende av nettsiden /foran for å gå ut av mappen og inn i css-->
     <link rel="stylesheet" href="/css/stylesheet.css">
+    <!--for å lage en menu bar har vi laget en liste inne i nav bar, for at den gjeldene siden skal markeres heter nåværende fil "curent file". 
+        For å referere til mappene er det skrevet /foran for å gå ut og videre inn i den refererte mappen. -->
+
     <nav class="navbar">
         <ul>
             <li><a class="aktiv" href="/curent file/">P35</a> </li>
@@ -13,6 +17,7 @@
             
         </ul>
     </nav>
+    <!--tittel til nettsiden-->
     <title>
         Introduksjon til Pilestredet 35.
     </title>
@@ -20,30 +25,19 @@
     
 </head>
 <body>
-<!--lagt til H1 først for å ha følgende h2-->
-    <H1>
-        Pilestredet 35
-    </H1>
+    <div class="hero-image">
+        div class="hero-text">
     
-    <!--<p> for paragraf og sette in relevant tekst-->
-    <p>
-        Bygget P35 ligger i Oslo under adressen pilestredet 35 0180 Oslo. 
-        Bygget tilhører universitet OsloMet som tilbyr 37 bachlerstuder, 67 masterstuder og 
-        7 Ph.d-programmer. 
-        Selvet bygget P35 er oppkalt etter kjemikeren og kvinnesaksforkjemperen Ellen Gleditsch, 
-        som var Norges andre kvinnelige professor, ved Universitetet i Oslo.
-        
-
-    </p>
-    <!-- bruker <img src>= for å referere til bildet, skriver Images/ for å hente i mappen Images-->
-    <img src="Images/P35.jpg" alt="Bilde av bygget P35 ved osloMet"> 
-    <h2>
-        Foto: Benjamin A. Ward / OsloMet
-        <!--bildet er tatt av  Benjamin A. Ward / OsloMet kilde: https://no.wikipedia.org/wiki/Ellen_Gleditschs_hus
-    https://www.oslomet.no/studier-->
-
-    </h2>
-
+            <h1 class="overskrift1">Pilestredet 35</h1>
+            <p class="ingress">Bygget P35 ligger i Oslo under adressen pilestredet 35 0180 Oslo. 
+                Bygget tilhører universitet OsloMet som tilbyr 37 bachlerstuder, 67 masterstuder og 
+                7 Ph.d-programmer. 
+                Selvet bygget P35 er oppkalt etter kjemikeren og kvinnesaksforkjemperen Ellen Gleditsch, 
+                som var Norges andre kvinnelige professor, ved Universitetet i Oslo.</p>
+        </div>
+    </div>
+   
+    
     <footer>
         <ul class="bunntekst">
             <li>Charlotte Wassnes</li>

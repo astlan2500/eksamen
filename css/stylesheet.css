@@ -112,6 +112,66 @@ h2{
     }
 }
 
+.wrapper{
+    display: grid;
+    grid-template-columns: 30vw auto minmax(300px, 30vw) 40px ;
+    grid-auto-rows: minmax(100px/auto);
+}
+.main-box {
+    grid-column: 1 /3;
+    grid-row: 1;
+}
+.secondary-box{
+    grid-column: 1/3;
+    grid-row: 2;
+    background-image: url();
+    background-size: cover;
+    width: minmax (auto,80vw);
+    height: 40vw;
+    max-height: 530px;
+}
+.aside{
+    grid-column: 3/4;
+    grid-row: 1;
+}
 
+body, html {
+    height: 100%;
+}
+
+
+.hero-image {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/P35.jpg");
+
+  
+  height: 80%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text {
+
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.ingress{
+    color: white;
+    text-align: center;
+    padding: 10%;
+}
+.overskrift1{
+    color: white;
+    text-align: center;
+}
 
 
