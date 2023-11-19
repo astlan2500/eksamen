@@ -49,19 +49,28 @@ text-decoration: none;
 .aktiv2 {
     background-color:white;
 }
-.grid-container {
-    display: flex;
-   
+.kolonne1 {
+    grid-area: rad1;
 }
-.rad {
-    flex: 50%;
+.kolonne2 {
+    grid-area: rad2;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:'rad1 rad1 rad1 rad2 rad2 rad2'
+    'rad1 rad1 rad1 rad2 rad2 rad2'
+    'rad1 rad1 rad1 rad2 rad2 rad2' ;
+    gap: 10px;
     padding: 10px;
 }
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align:left;
+    text-align: left;
     padding: 20px 0;
+    font-size: 30px;
+
 }
+ 
+
 h1{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -69,9 +78,14 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .matbilde{
    height: auto;
    width: 10vw;
+}
+.prototypbilde{
+    height: auto;
+    width: 40vw;
 }
 @media (max-width: 480px) {
     .matbilde {
