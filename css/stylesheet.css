@@ -14,7 +14,7 @@ body{
 }
 
 .navbar li{
-    display: inline-block;
+    display: inline-block; /* sjekke om vi vil ha den i mobil*/
 }
 
 .navbar a{
@@ -24,9 +24,8 @@ body{
     padding: 20px;
     display: block;
     text-align: center;
-
 }
-
+ 
 .navbar a:hover{
     background-color: rgb(171, 171, 171);
     cursor: pointer;
@@ -69,11 +68,6 @@ h2{
     clear: both;
   }
   
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
 .matbilde{
    height: auto;
    width: 30vw;
@@ -86,19 +80,6 @@ h2{
     height: auto;
     width: 30vw;
 }
-@media (max-width: 480px) {
-    .matbilde {
-        height: auto;
-        width: 15vw;
-    }
-    .navbar a {
-        padding: 25px;
-    }
-    .kolonne{
-        width: 100%;
-    }
-}
-
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/P35.jpg");
@@ -133,6 +114,21 @@ h2{
     color: rgb(14, 14, 107);
     font-size: 15px;
 }
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
 
-
-
+@media (max-width: 480px) {
+    .matbilde {
+        height: auto;
+        width: 15vw;
+    }
+    .navbar a {
+        padding: 25px;
+    }
+    .kolonne{
+        width: 100%;
+    }
+}
