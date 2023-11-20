@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(248, 237, 239);
+    background-color: rgb(255, 240, 240);
 }
 .navbar{
     position: sticky;
@@ -18,7 +18,7 @@ body{
 }
 
 .navbar a{
-    color: white;
+    color: black;
     font-family: Arial;
     text-decoration: none;
     padding: 20px;
@@ -27,7 +27,7 @@ body{
 }
  
 .navbar a:hover{
-    background-color: rgb(171, 171, 171);
+    background-color: white;
     cursor: pointer;
 }
 .aktiv {
@@ -105,14 +105,15 @@ h2{
     color: white;
     text-align: center;
     padding: 20%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .kantinene{
-    color: rgb(237, 143, 187);
+    color: black;
     font-size: 30px;
 }
 .innledning{
-    color: rgb(14, 14, 107);
+    color: rgb(60, 60, 60);
     font-size: 15px;
 }
 @media screen and (max-width: 600px) {
