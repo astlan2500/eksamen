@@ -3,21 +3,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- link til css for å redeigere utseende av nettsiden /foran for å gå ut av mappen og inn i css-->
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <!--for å lage en menu bar har vi laget en liste inne i nav bar, for at den gjeldene siden skal markeres heter nåværende fil "curent file". 
-        For å referere til mappene er det skrevet /foran for å gå ut og videre inn i den refererte mappen. -->
+    
 
-    <nav class="navbar">
-        <ul>
-            <li><a class="aktiv" href="/curent file/">P35</a> </li>
-            <li><a href="/Side 2/Accessibility.html">Test</a></li>
-            <li><a href="/Side 3/Topical.html">Prototyping</a></li>
-            <li><a href="/Side 4/images and headings.html">Kantinene</a></li>
-            <li><a href="/Side 4/Universitetsbiblioteket.html">Universitetsbiblioteket</a></li>
-
-
-            
-        </ul>
-    </nav>
+   
     <!--tittel til nettsiden-->
     <title>
         Introduksjon til Pilestredet 35.
@@ -27,6 +15,26 @@
 </head>
 
 <body>
+    <!--for å lage en menu bar har vi laget en liste inne i nav bar, for at den gjeldene siden skal markeres heter nåværende fil "curent file". 
+        For å referere til mappene er det skrevet /foran for å gå ut og videre inn i den refererte mappen. -->
+    <header>
+        <nav>
+            <div class="navbar">
+                <input id="burger-toggle" type="checkbox">
+                <label class="hamburger-toggle-container" for="burger-toggle">
+                    <div class="meny-ikon"></div>
+                </label>
+
+                <ul class="meny">
+                    <li class="aktiv"><a href="/index.html">P35</a> </li>
+                    <li><a href="/Side 2/Accessibility.html">Test</a></li>
+                    <li><a href="/Side 3/Topical.html">Prototyping</a></li>
+                    <li><a href="/Side 4/images and headings.html">Kantinene</a></li>
+                    <li><a href="/Side 4/Universitetsbiblioteket.html">Universitetsbiblioteket</a></li>
+                 </ul>
+            </div>
+        </nav>
+    </header> 
     <div class="hero-image">
     
             <h1 class="overskrift1">Pilestredet 35</h1>

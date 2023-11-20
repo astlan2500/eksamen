@@ -1,9 +1,163 @@
-body{
+* {
+    box-sizing: border-box;
+  }
+
+body {
     margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
     padding: 0;
     background-color: rgb(255, 240, 240);
 }
-.navbar{
+p {
+    line-height: 1.5;
+}
+
+.aktiv {
+    background-color: hotpink;
+    color: white;
+}
+
+.meny a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .meny {
+        display: flex;
+        position: sticky;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        list-style-type: none;
+        color: aliceblue;
+        height: 200px;
+        line-height: 1.6rem;
+        margin-top: -10px;
+        margin-left: 0px;
+        padding-left: 0.1rem;
+    }
+
+    .meny-ikon {
+        display: block;
+        background-image: url(../Images/borgir.png);
+        background-size: cover;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+    }
+
+    .hamburger-toggle-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 40px;
+        margin-left: 0px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: left;
+    }
+
+    #burger-toggle {
+        display: none;
+    }
+
+    #burger-toggle + .hamburger-toggle-container {
+        margin: 0px;
+      }
+
+    .meny > li {
+        display: flex;
+        overflow: hidden;
+        background-color: pink;
+    }
+
+    #burger-toggle ~ .meny li { /**This hides the menu _before_ icon clicked**/
+        height: 0px;
+        margin: 0px;
+    }
+
+    #burger-toggle:checked ~ .meny li { /** This shows the menu _after_ icon clicked **/
+       height: 1rem;
+        margin: 0px;
+        padding: 0.6rem;
+        padding-right: 4rem;
+        height: 1.4rem;
+    }
+
+    .navbar {
+        background-color: pink;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: auto;
+        height: 40px;
+        display: flex;
+    }
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/P35.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+      }
+      .overskrift1 {
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 25px;
+      }
+      .ingress{
+          color: white;
+          text-align: center;
+          padding: 20%;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12px;
+      }
+      footer{
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(249, 249, 118);
+    }
+    .bunntekst li {
+        display: inline-block;
+        padding: 0px 20px;
+        text-align: center;
+        font-family: arial;
+        font-size: 12px;
+    }
+    .column{
+        padding: 20px;
+    }
+    .bilder{
+        height: auto;
+        width: 80vw;
+    
+    }
+    .biblotekbilder{
+        height: auto;
+        width: 80vw;
+    }
+}
+
+@media (min-width: 701px) {
+    .meny {
+        background-color:pink;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style-type: none;
+        color: rgb(43, 89, 128);
+        margin-top: 0px;
+    }
+   .navbar{
     position: sticky;
     top: 0;
 }
@@ -14,7 +168,7 @@ body{
 }
 
 .navbar li{
-    display: inline-block; /* sjekke om vi vil ha den i mobil*/
+    display: inline-block;
 }
 
 .navbar a{
@@ -35,27 +189,22 @@ body{
     color: white;
 }
 
-footer{
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(249, 249, 118);
-}
-.bunntekst li {
-    display: inline-block;
-    padding: 0px 20px;
-    text-align: center;
-    font-family: arial;
-    font-size: 17px;
-}
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-}
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-}
-* {
-    box-sizing: border-box;
-  }
+    #burger-toggle { /* Wide screen: Hide the burger-image! */
+        display: none;
+      }
+      footer{
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(249, 249, 118);
+    }
+    .bunntekst li {
+        display: inline-block;
+        padding: 0px 20px;
+        text-align: center;
+        font-family: arial;
+        font-size: 17px;
+    }
+
   /* Grid tatt fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
 .column {
     float: left;
@@ -71,7 +220,7 @@ h2{
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
  } 
-.bilder{
+ .bilder{
     height: auto;
     width: 30vw;
 
@@ -116,21 +265,4 @@ h2{
     color: rgb(60, 60, 60);
     font-size: 15px;
 }
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-@media (max-width: 480px) {
-    .bilder {
-        height: auto;
-        width: 15vw;
-    }
-    .navbar a {
-        padding: 25px;
-    }
-    .kolonne{
-        width: 100%;
-    }
 }
