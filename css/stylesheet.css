@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(248, 237, 239);
 }
 .navbar{
     position: sticky;
@@ -122,6 +123,15 @@ h2{
     color: white;
     text-align: center;
     padding: 20%;
+}
+
+.kantinene{
+    color: rgb(237, 143, 187);
+    font-size: 30px;
+}
+.innledning{
+    color: rgb(14, 14, 107);
+    font-size: 15px;
 }
 
 
