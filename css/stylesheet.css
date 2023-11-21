@@ -2,11 +2,8 @@
 * {
     box-sizing: border-box;
   }
-  .navbar{
-    position: sticky;
-    top: 0;
-}
-
+  
+/** vi har gitt body bakrunnsfarge og at all tekst skal være i samme font. **/
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -16,12 +13,12 @@ body {
 p {
     line-height: 1.5;
 }
-
+/** a.aktiv gjør at teksen i menyen endrer farge til hvit bare på den siden du har åpen**/
 .navbar a.aktiv {
     color: white;
     
 }
-
+/** resten av teksen i menybaren forblir svart.**/
 .meny a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -45,7 +42,7 @@ p {
         margin-left: 0px;
         padding-left: 0.1rem;
     }
-
+/** koden under er selve burger ikonet, som vi har tilpassed vår navbar, når den er i mobil format**/
     .meny-ikon {
         display: block;
         background-image: url(../Images/borgir.png);
@@ -91,7 +88,7 @@ p {
         padding: 2rem;
         padding-right: 2rem;
     }
-    
+    /** lagde navbaren i lik tykkelse selv om man skalerer fra desktop til mobil.**/
     .navbar {
         background-color: pink;
         padding-top: 1.8rem;
