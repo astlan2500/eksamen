@@ -63,20 +63,21 @@ p {
         justify-content: center;
         align-items: left;
     }
-/**/
+
     #burger-toggle {
         display: none;
     }
 
+/*setter marginen til 0*/
     #burger-toggle + .hamburger-toggle-container {
         margin: 0px;
       }
-
+/* listen i menyen gjør at 
     .meny > li {
         display: flex;
         overflow: hidden;
         background-color: pink;
-    }
+    }*/
 
     #burger-toggle ~ .meny li { 
         height: 0px;
