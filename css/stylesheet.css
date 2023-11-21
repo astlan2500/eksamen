@@ -52,6 +52,7 @@ p {
         width: 60px;
     }
 
+/*klassen til menyen */
     .hamburger-toggle-container {
         display: flex;
         flex-direction: column;
@@ -62,7 +63,7 @@ p {
         justify-content: center;
         align-items: left;
     }
-
+/**/
     #burger-toggle {
         display: none;
     }
@@ -81,8 +82,8 @@ p {
         height: 0px;
         margin: 0px;
     }
+    /*når burgermenyen er trykket på vises listen av valgte menyer, her redigerer vi posisjon med hjelp av høyde og pdding*/
 
-    /** Tilpasset menyen som kommer fra brugeren til å passe til vår navbar**/
     #burger-toggle:checked ~ .meny li { 
         height: 1rem;
         margin: 0px;
@@ -102,6 +103,7 @@ p {
     }
 
     /** Bakgrunnsbilde til forsiden, kode tatt fra https://www.w3schools.com/howto/howto_css_hero_image.asp **/
+    /** har brukt hero-image for å få stort bilde med tekst, her redigerer vi størelse, posisjon, høyde og farge.**/
 
     .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/P35.jpg");
@@ -112,7 +114,6 @@ p {
         position: relative;
         overflow: hidden;
       }
-      /** Formatering til overskriften på forsidebilde. **/
       .overskrift1 {
         text-align: center;
         position: absolute;
@@ -122,7 +123,7 @@ p {
         color: white;
         font-size: 25px;
       }
-      /** Formatering til informasjonstekst på forsidebilde **/
+      /**egen classe kalt ingress for å få ønsket layout på forside**/
       .ingress{
           color: white;
           text-align: center;
@@ -145,6 +146,7 @@ p {
     .column{
         padding: 20px;
     }
+    /**egen klasse for lik størelse på bildene**/
     .bilder{
         height: auto;
         width: 80vw;
@@ -178,7 +180,7 @@ p {
         color: rgb(43, 89, 128);
         margin-top: 0px;
     }
-/** Setter farge på navbaren**/
+
 .navbar ul{
     background-color:pink;
     padding: 0px;
@@ -198,16 +200,15 @@ p {
     text-align: center;
 }
  
-/** Markerer siden man hovrer over i navbaren **/
 .navbar a:hover{
     background-color: white;
     cursor: pointer;
 }
-/** Markerer siden som er aktiv på navbaren **/
 .aktiv {
     background-color:rgb(173, 33, 103);
     color: white;
 }
+
 
     #burger-toggle { 
         display: none;
@@ -268,7 +269,6 @@ p {
   position: relative;
   overflow: hidden;
 }
-/** Overskriften justeres når siden skaleres **/
 .overskrift1 {
   text-align: center;
   position: absolute;
@@ -277,7 +277,6 @@ p {
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
 }
-/** Informasjonsteksten justeres når siden skaleres **/
 .ingress{
     color: rgb(255, 255, 255);
     text-align: center;
