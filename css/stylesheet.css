@@ -115,6 +115,7 @@ p {
         position: relative;
         overflow: hidden;
       }
+      /* dette er en klasse, alle med samme navn, vil ha samme egenskaper i mobil format*/
       .overskrift1 {
         text-align: center;
         position: absolute;
@@ -200,16 +201,16 @@ p {
     display: block;
     text-align: center;
 }
- 
+ /* den uthever hvit-farge i menyen når du drar musepekeren over*/
 .navbar a:hover{
     background-color: white;
     cursor: pointer;
 }
+/* når du klikker på en av sidene blir menyen mørk-rosa, det indikerer at du er på den aktive filen*/
 .aktiv {
     background-color:rgb(173, 33, 103);
     color: white;
 }
-
 
     #burger-toggle { 
         display: none;
@@ -270,6 +271,7 @@ p {
   position: relative;
   overflow: hidden;
 }
+/* dette er en klasse, alle med samme navn, vil ha samme egenskaper i desktop format*/
 .overskrift1 {
   text-align: center;
   position: absolute;
