@@ -283,11 +283,12 @@ p {
     padding: 20%;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/** Overskriften på kantinesiden**/
 .kantinene{
     color: black;
     font-size: 30px;
 }
+/** innledningen til kantinene som er i egen klasse, så vi kunne endre farge og font**/
 .innledning{
     color: rgb(60, 60, 60);
     font-size: 15px;
