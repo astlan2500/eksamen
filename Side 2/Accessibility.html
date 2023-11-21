@@ -33,9 +33,10 @@
         
                 
             <div class="bildetekst"> 
-                <img class="bilder" src="../Images/testbiblotek.png" alt="Bilde av postit lapper på en vegg"> 
-                <p class="skrift1"> Foto: Test biblotek siden</p>
-                <img class="bilder" src="../Images/testforside.png" alt="Bilde av prototyping">
+                <img class="bilder" src="../Images/testbiblotek.png" alt="Bilde av test før endring"> 
+                <img class="bilder" src="../Images/testebibliooteketter.png" alt="Bilde av den automatiske testen etter endring i koden">
+                <p class="skrift1">  Foto: Test biblotek siden</p>
+                <img class="bilder" src="../Images/testforside.png" alt="Bilde av test før endring">
                 <p class="skrift1"> Foto: Test forsiden</p>
                 <img class="bilder" src="../Images/testkantine.png" alt="Bilde av prototyping">
                 <p class="skrift1"> Foto: Test kantine siden</p>
@@ -46,7 +47,19 @@
             </div>
         <div class="column">   
             <div class="bildetekst"> 
-            
+            <h2 class="overskrift">Hvordan har vi testet nettsiden vår?</h2>    
+            <p class="skrift1"> Vi har testet nettsiden vår med bruk  av lighthouse. Dette er en automatisk test, som viser performance, accessebility, best practice og SEO. For å få den mest optimale nettsiden har vi tatt utgangspunkt i tilbakemeldingen fra den automatiske testen, og redigert koden deretter. Vi testet performence på mobil ført, og videre på desktop. Vi fikk 96% på performance på desktop, men problemt med bildestørrelse oppstår på testing av mobil. Bildene vi henviser til er av accessebility fra mobil testing, da det var her vi måtte tilpasse koden for den mest brukervennlige nettsiden.  </p>
+            <h2 class="overskrift"> Accessibility test av Universitetsbibliotekene</h2>
+            <p class="skrift1"> Bildet til venstre viser tilbakemeldingen fra lighthouse, som ga oss insyn i at vi måtte redigere kontrasten i fargebruk. Vi endret derfor teksten fra hvit til sort i css. Dette ga oss en 100% på accessebility, best practice og SEO. Utenom på perfromance grunnet at bildene var for store, men vi har komprimert alle bildene til under 1MB og anså det derfor ikke som nødvendig å endre.</p>
+            <h2 class="overskrift"> Accessibility test av forsiden </h2>
+            <p class="skrift1">Her henviser vi til resultatet etter å å ha endret koden slik at vi får den mest optimale nettsiden. Her definerte vi språket, og la til "meta name="viewport" content="width=device-width, initial-scale=1" for å få en mer brukervennlig side, da siden lastes raskere. Vi har også lagt til en Viewport meta tag på de resterende sidene. </p>
+            <h2 class="overskrift"> Accessibility test av kantine siden</h2>
+            <p class="skrift1"> Her har vi valgt å fjerne noen bilder etter å tatt i vurdering tilbakemeldingen fra testen, og konkludert med at enkelte bilder ga dårlig utslag og ble uoversiktlig. </p>
+            <h2 class="overskrift">Accessibility test av prototype side</h2>
+            <p class="skrift1"> Her fikk vi ikke noe utslag på potensielle endringer, og beholdt koden slik den var. Eneste endringer gjort på denne siden er i samhandling med de andre å legge til Viewport meta tag.</p>
+            <h2 class="overskrift">Læringsutbytte av accessebility test</h2>
+            <p class="skrift1">Ved å gjennomkjøre en accessebility test har det gitt oss gode innsyn i hvordan vi kan opstimalisere vår nettside og videre utvikle koden vår.Vi har lært til vårt neste webutviklingsproskjekt at vi må ha bedre bildekvalitet og huske bilder under 1MB. Gjennom oppgaven har vi også fått øynene opp for at en nettside vil være anerledes på en pc i motsettning til en mobiltelefon. Det er derfor viktig å teste begge, og videre lage @media for å tilpasse utseende for ulike max-width. Vi ønsker også å ta med oss bruken av kontraster og bilder, slik at teksten kommer tydlig frem. Slik at det ikke vil være vanskelig å se, eller forstå konteksten av bruk av tekst og farge.     </p>
+
     
                 
             </div>    
