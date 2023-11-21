@@ -146,6 +146,11 @@ p {
         height: auto;
         width: 80vw;
     }
+    .matbilder{
+        height: auto;
+        width: 50vw;
+
+    }
 }
 
 @media (min-width: 701px) {
@@ -225,6 +230,10 @@ p {
     height: auto;
     width: 30vw;
 
+}
+.matbilder{
+    height: auto;
+    width: 15vw;
 }
 .biblotekbilder{
     height: auto;
