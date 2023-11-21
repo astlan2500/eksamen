@@ -43,7 +43,7 @@ p {
 
     .meny-ikon {
         display: block;
-        background-image: url(Images/borgir.png);
+        background-image: url(../Images/borgir.png);
         background-size: cover;
         position: absolute;
         height: 60px;
