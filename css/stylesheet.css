@@ -82,6 +82,7 @@ p {
         margin: 0px;
     }
 
+    /** Tilpasset menyen som kommer fra brugeren til å passe til vår navbar**/
     #burger-toggle:checked ~ .meny li { 
         height: 1rem;
         margin: 0px;
@@ -111,6 +112,7 @@ p {
         position: relative;
         overflow: hidden;
       }
+      /** Formatering til overskriften på forsidebilde. **/
       .overskrift1 {
         text-align: center;
         position: absolute;
@@ -120,6 +122,7 @@ p {
         color: white;
         font-size: 25px;
       }
+      /** Formatering til informasjonstekst på forsidebilde **/
       .ingress{
           color: white;
           text-align: center;
@@ -175,7 +178,7 @@ p {
         color: rgb(43, 89, 128);
         margin-top: 0px;
     }
-
+/** Setter farge på navbaren**/
 .navbar ul{
     background-color:pink;
     padding: 0px;
@@ -195,10 +198,12 @@ p {
     text-align: center;
 }
  
+/** Markerer siden man hovrer over i navbaren **/
 .navbar a:hover{
     background-color: white;
     cursor: pointer;
 }
+/** Markerer siden som er aktiv på navbaren **/
 .aktiv {
     background-color:rgb(173, 33, 103);
     color: white;
@@ -263,6 +268,7 @@ p {
   position: relative;
   overflow: hidden;
 }
+/** Overskriften justeres når siden skaleres **/
 .overskrift1 {
   text-align: center;
   position: absolute;
@@ -271,6 +277,7 @@ p {
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
 }
+/** Informasjonsteksten justeres når siden skaleres **/
 .ingress{
     color: rgb(255, 255, 255);
     text-align: center;
